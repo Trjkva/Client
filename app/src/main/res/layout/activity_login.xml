@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/chat"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Введите имя"
+        android:id="@+id/tvHint"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etNickname"
+        android:maxLength="20"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        android:id="@+id/btnConnect"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
